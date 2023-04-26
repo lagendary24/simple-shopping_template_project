@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar using HTML, CSS and Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...some-long-string-of-characters" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="wrapper">
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="./logo.png" alt="LOGO">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Men</a>
+                    </li>
+                    <li>
+                        <a href="">Women</a>
+                    </li>
+                    <li>
+                        <a href="">Shop</a>
+                    </li>
+                    <li>
+                        <a href="">Product</a>
+                    </li>
+                    <li>
+                        <a href="">Pages</a>
+                    </li>
+                    <li>
+                        <a href="">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="">Blogs</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="login-signup">
+                
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function() {
+            nav.classList.toggle("active");
+        }
+    </script>
+    <main>
+        <section class="container">
+            <article>
+                <h1>Enjoy This <br> Winter Trend</h1><br>
+                <p>Discover now latest collection</p>
+                <div class="button"><button><a href="#">Shop now</a></button></div>
+            </article>
+        </section>
+        <section class="container">
+            <article>
+                <button><a href="#">New Arrivals</a></button>
+            </article>
+            <article>
+                <button><a href="#">Women collection</a></button>
+            </article>
+            <article>
+                <button><a href="#">Men Collection</a></button>
+            </article>
+        </section>     
+    </main>
+    
+    <footer>
+        <div>
+            <h2>Newsletters</h2>
+            <p>Sign up to receive information about new products</p>
+            <div class="signup">
+                <input type="email" placeholder="Enter your email address" class="email-input">
+                <button type="submit" class="signup-button"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </div>
+            <hr>
+
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+            </div>
+          </div>
+    </footer>
+    </div>
+</body>
+</html>
